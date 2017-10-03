@@ -1,0 +1,11 @@
+  <p>
+      <label for="input-name2">Escribe tu nombre</label>
+      <input id="input-name2" type="text" placeholder="aqui" 
+      [(ngModel)]="sName">
+    </p>
+    <p>
+        <button (click)="btnBorrar($event)">Borrar</button>
+    </p>
+    <p>
+    Hola {{sName}}
+    </p>    

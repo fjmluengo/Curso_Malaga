@@ -1,0 +1,14 @@
+<p>
+    <label for="input-pensamiento">Escribe tu pensamiento</label>
+    <input id="input-pensamiento" type="text" placeholder="pensamiento" 
+    [(ngModel)]="sPensamiento">
+  </p>
+  <p>
+      <button (click)="btnAniadir($event)">Añadir</button>
+  </p>
+  <h2 *ngIf="aPensamientos.length > 0">   
+      Lista de pensamientos
+    </h2>
+    <ul>
+      <li *ngFor="let pensamiento of aPensamientos">{{pensamiento}}</li>
+    </ul>  
